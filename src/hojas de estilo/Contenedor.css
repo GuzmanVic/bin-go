@@ -3,6 +3,8 @@
   align-items: center;
   min-height: 80px;
   min-width: 255px;
+  max-height: 80px;
+  max-width: 255px;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 3px 13px 1px rgb(0 0 0 /26%);
@@ -24,17 +26,19 @@
 }
 .texto-bote p {
   margin: 0;
+  font-size: small;
 }
 .tipo p {
   margin: 0;
   margin-right: 10px;
+  font-size: small;
 }
 .tipo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
-  color:gray;
+  align-items: center;
+  color: gray;
 }
 .bote:hover {
   transform: translateY(-10px);
