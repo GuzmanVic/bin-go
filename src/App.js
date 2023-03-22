@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css"; //CSS DE LA CLASE
+import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de contenedores
+import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="contenedor-principal">
+        <div className="componentes">
+          <div className="barra-izquierda">
+            <div className="logo-nombre">
+              <img
+                className="logo"
+                src={require("./imagenes/LogoPNG.png")}
+                alt="logo.png"
+              />
+              <h1 className="Nombre">Bin-Go</h1>
+            </div>
+            <Listaizq />
+          </div>
+          <img className="mapa" src={require("./imagenes/mapa.jpeg")} alt="mapa" />
+          <div className="barra-derecha">
+            <Listader />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

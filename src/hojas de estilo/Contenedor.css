@@ -1,0 +1,41 @@
+.bote {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  min-width: 255px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 /26%);
+  transition: transform 0.1s ease-out;
+  margin-right: 20px;
+}
+
+.imagen-bote {
+  flex-shrink: 0;
+  margin-right: 8px;
+  max-width: 15%;
+}
+
+.texto-bote {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.texto-bote p {
+  margin: 0;
+}
+.tipo p {
+  margin: 0;
+  margin-right: 10px;
+}
+.tipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color:gray;
+}
+.bote:hover {
+  transform: translateY(-10px);
+}
