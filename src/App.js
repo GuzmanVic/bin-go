@@ -5,19 +5,23 @@ function App() {
   return (
     <div className="App">
       <div className="contenedor-principal">
+        <div className="logo-nombre">
+          <img
+            className="logo"
+            src={require("./imagenes/LogoPNG.png")}
+            alt="logo.png"
+          />
+          <h1 className="Nombre">Bin-Go</h1>
+        </div>
         <div className="componentes">
           <div className="barra-izquierda">
-            <div className="logo-nombre">
-              <img
-                className="logo"
-                src={require("./imagenes/LogoPNG.png")}
-                alt="logo.png"
-              />
-              <h1 className="Nombre">Bin-Go</h1>
-            </div>
             <Listaizq />
           </div>
-          <img className="mapa" src={require("./imagenes/mapa.jpeg")} alt="mapa" />
+          <img
+            className="mapa"
+            src={require("./imagenes/mapa.jpeg")}
+            alt="mapa"
+          />
           <div className="barra-derecha">
             <Listader />
           </div>

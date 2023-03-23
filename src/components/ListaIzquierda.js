@@ -1,5 +1,6 @@
 import React from "react";
 import { Contenedor } from "./Contenedor.js";
+import "../App.css"; //CSS DE LA CLASE
 
 export function Listaizq() {
   return (

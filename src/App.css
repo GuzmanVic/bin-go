@@ -1,15 +1,13 @@
-* {
-  margin-left: 0.5%;
-  padding: 0;
+.contenedor-principal > * {
+  margin-left: 50px;
 }
 
-html,
-body {
-  font-size: 18px;
-  background: #f6f6f7;
+.contenedores {
+  padding: 10px 10px 0 8px;
 }
 .logo-nombre {
-  margin-top: 1%;
+  margin-top: 0.5%;
+  margin-left: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,25 +17,32 @@ body {
   max-width: 2rem;
   margin-right: 5px;
 }
-.barra-izquierda {
-  justify-content: left;
-  align-items: left;
-}
+
 .componentes {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.barra-derecha {
-  margin-top: 8.2%;
-    margin-left: 3%;
+
+.barra-izquierda {
+  width: 67%;
+  overflow: hidden;
 }
+
+.barra-derecha {
+  margin-left: 5px;
+  width: 88%;
+  overflow: hidden;
+}
+
 .contenedor-principal .contenedores > * {
   margin-bottom: 10px;
 }
-.mapa{
-  margin-top: -160px;
-  min-width: 350px;
-  min-height: 350px;
+
+.mapa {
+  min-width: 50%;
+  min-height: 50%;
+  max-width: 60%;
+  max-height: 60%;
   border-radius: 5%;
 }
