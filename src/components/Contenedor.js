@@ -19,7 +19,10 @@ export function Contenedor(props) {
 
   return (
     <div className="bote">
-      <img className="imagen-bote" src={imagen} alt="Contenedor.png" />
+      <div className="imagen">
+        <img className="imagen-bote" src={imagen} alt="Contenedor.png" />
+
+      </div>
       <div className="texto-bote">
         <strong>
           <p>Contenedor</p>
