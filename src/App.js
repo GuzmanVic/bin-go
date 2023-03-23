@@ -17,11 +17,13 @@ function App() {
           <div className="barra-izquierda">
             <Listaizq />
           </div>
-          <img
-            className="mapa"
-            src={require("./imagenes/mapa.jpeg")}
-            alt="mapa"
-          />
+          <div className="centro">
+            <img
+              className="mapa"
+              src={require("./imagenes/mapa.jpeg")}
+              alt="mapa"
+            />
+          </div>
           <div className="barra-derecha">
             <Listader />
           </div>
