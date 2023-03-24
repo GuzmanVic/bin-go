@@ -1,6 +1,9 @@
 import "./App.css"; //CSS DE LA CLASE
 import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de contenedores
 import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
+import {Mapa} from "./components/Mapa.js";
+import {Mapa2} from "./components/Mapa2.js";
+
 function App() {
   return (
     <div className="App">
@@ -18,11 +21,7 @@ function App() {
             <Listaizq />
           </div>
           <div className="centro">
-            <img
-              className="mapa"
-              src={require("./imagenes/mapa.jpeg")}
-              alt="mapa"
-            />
+            <Mapa2/>
           </div>
           <div className="barra-derecha">
             <Listader />

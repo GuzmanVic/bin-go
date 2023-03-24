@@ -33,7 +33,7 @@ export function Contenedor(props) {
         <strong>
           <p>{props.tipo}</p>
         </strong>
-        <p>{props.porcentaje}</p>
+        <p className = "porcentaje">{props.porcentaje}</p>
       </div>
     </div>
   );

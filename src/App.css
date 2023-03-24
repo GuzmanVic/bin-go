@@ -1,5 +1,19 @@
 
+@font-face {
+  font-family: "SequelSansSemiBold";
+  src: url("C:/Users/Juans/Downloads/bin-go-main/bin-go/src/fonts/SequelSansSemiBoldDisp.ttf");
+}
 
+@font-face {
+  font-family: "SequelSansMedium";
+  src: url("C:/Users/Juans/Downloads/bin-go-main/bin-go/src/fonts/SequelSansMediumDisp.ttf");
+}
+
+.Nombre{
+ margin-left: .45%;
+ font-family: "SequelSansMedium";
+
+}
 .logo-nombre {
   margin-top: 0.5%;
   margin-left: 5%;
@@ -9,7 +23,7 @@
 }
 
 .logo {
-  max-width: 2rem;
+  max-width: 2.5rem;
   margin-right: 5px;
 }
 
