@@ -1,13 +1,13 @@
-@font-face {
-  font-family: "SequelSansMedium";
-  src: url("C:/Users/Juans/Downloads/bin-go-main/bin-go/src/fonts/SequelSansMediumDisp.ttf");
-}
 
 @font-face {
   font-family: "SequelSansSemiBold";
-  src: url("C:/Users/Juans/Downloads/bin-go-main/bin-go/src/fonts/SequelSansSemiBoldDisp.ttf");
+  src: url("/src/fonts/SequelSansSemiBoldDisp.ttf");
 }
 
+@font-face {
+  font-family: "SequelSansMedium";
+  src: url("/src/fonts/SequelSansMediumDisp.ttf");
+}
 
 .bote {
   display: flex;
@@ -53,7 +53,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: right;
-  color: gray;
+  color: rgb(107, 107, 107, 0.5);
 }
 .bote:hover {
   transform: translateY(-3px);

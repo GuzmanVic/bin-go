@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: "SequelSansSemiBold";
-  src: url("C:/Users/Juans/Downloads/bin-go-main/bin-go/src/fonts/SequelSansSemiBoldDisp.ttf");
+  src: url("./fonts/SequelSansSemiBoldDisp.ttf");
 }
 
 @font-face {
   font-family: "SequelSansMedium";
-  src: url("C:/Users/Juans/Downloads/bin-go-main/bin-go/src/fonts/SequelSansMediumDisp.ttf");
+  src: url("./fonts/SequelSansMediumDisp.ttf");
 }
 
 .Nombre{
