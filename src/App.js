@@ -1,8 +1,9 @@
 import "./App.css"; //CSS DE LA CLASE
 import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de contenedores
 import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
-import {Mapa} from "./components/Mapa.js";
+
 import {Mapa2} from "./components/Mapa2.js";
+import {DatosUbicacion} from "./components/datos2.js";
 
 function App() {
   return (
