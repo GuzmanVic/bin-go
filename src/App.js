@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import "./App.css";
-import { Listaizq } from "./components/ListaIzquierda";
-import { Listader } from "./components/ListaDerecha";
-import { Mapa2 } from "./components/Mapa2";
+
+import "./App.css"; //CSS DE LA CLASE
+import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de contenedores
+import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
+import { useState, useEffect } from "react";
 import { Tarjeta } from "./components/Tarjeta";
+import {Mapa2} from "./components/Mapa2.js";
 
 function App() {
   const [tarjetaVisible, setTarjetaVisible] = useState(false);
@@ -38,5 +39,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
