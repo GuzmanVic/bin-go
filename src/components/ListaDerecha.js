@@ -3,9 +3,6 @@ import { Contenedor } from "./Contenedor.js";
 import "../App.css"; //CSS DE LA CLASE
 import { useState, useEffect } from "react";
 
-
-
-
 function obtenerDatosUbicacion() {
   const ubicaciones = ['Edificio 2', 'CC2', 'Pasillo Cafetería', 'Cafetería', 'Edificio 1', 'Pasillo Exterior'];
   const porcentajes = [...Array(101).keys()];
@@ -28,7 +25,7 @@ export function Listader() {
   useEffect(() => {
     const interval = setInterval(() => {
       setDatosUbicacion([obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion()]);
-    }, 300000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);

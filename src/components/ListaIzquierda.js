@@ -28,7 +28,7 @@ export function Listaizq() {
   useEffect(() => {
     const interval = setInterval(() => {
       setDatosUbicacion([obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion(), obtenerDatosUbicacion()]);
-    }, 300000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
