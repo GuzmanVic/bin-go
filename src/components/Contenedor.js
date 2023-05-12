@@ -54,6 +54,7 @@ export function Contenedor(props) {
           ubicacion={props.ubicacion} // Pasar la ubicación del contenedor a la Tarjeta
           tipo={props.tipo} // Pasar el tipo del contenedor a la Tarjeta
           porcentaje={props.porcentaje} // Pasar el porcentaje del contenedor a la Tarjeta
+          llenado={imagen}
         />
       )}
     </>
