@@ -1,27 +1,34 @@
-import "./App.css"; //CSS DE LA CLASE
-import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de contenedores
-import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
-import { Mapa2 } from "./components/Mapa2.js";
-import { Tarjeta } from "./components/Tarjeta.js";
+import React, { useState } from "react";
+import "./App.css";
+import { Listaizq } from "./components/ListaIzquierda";
+import { Listader } from "./components/ListaDerecha";
+import { Mapa2 } from "./components/Mapa2";
+import { Tarjeta } from "./components/Tarjeta";
+
 function App() {
+  const [tarjetaVisible, setTarjetaVisible] = useState(false);
+
+  const abrirTarjeta = () => {
+    setTarjetaVisible(true);
+  };
+
+  const cerrarTarjeta = () => {
+    setTarjetaVisible(false);
+  };
+
   return (
     <div className="App">
       <div className="contenedor-principal">
-        <div className="logo-nombre">
-          <img
-            className="logo"
-            src={require("./imagenes/LogoPNG.png")}
-            alt="logo.png"
-          />
-          <h1 className="Nombre">Bin-Go</h1>
-        </div>
+        {/* Resto del código... */}
         <div className="componentes">
           <div className="barra-izquierda">
             <Listaizq />
           </div>
           <div className="centro">
             <Mapa2 />
-            <Tarjeta />
+            <div onClick={abrirTarjeta}>
+              {tarjetaVisible && <Tarjeta onClose={cerrarTarjeta} />}
+            </div>
           </div>
           <div className="barra-derecha">
             <Listader />
