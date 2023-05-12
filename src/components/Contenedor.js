@@ -4,7 +4,7 @@ import "../hojas de estilo/Contenedor.css";
 import verde from "../imagenes/verde.png";
 import amarillo from "../imagenes/amarillo.png";
 import rojo from "../imagenes/rojo.png";
-import { Tarjeta } from "./Tarjeta";
+import { Tarjeta } from "./Tarjeta.js";
 export function Contenedor(props) {
   const [mostrarTarjeta, setMostrarTarjeta] = useState(false);
 
@@ -47,6 +47,6 @@ export function Contenedor(props) {
         </div>
       </div>
       {mostrarTarjeta && <Tarjeta onClose={cerrarTarjeta} />}
-    </>
+      </>
   );
 }

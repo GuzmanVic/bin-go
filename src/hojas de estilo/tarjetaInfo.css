@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "SequelSansSemiBold";
+    src: url("/src/fonts/SequelSansSemiBoldDisp.ttf");
+  }
+  
+  @font-face {
+    font-family: "SequelSansMedium";
+    src: url("/src/fonts/SequelSansMediumDisp.ttf");
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7.5vh;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /26%);
+    transition: transform 0.1s ease-out;
+    margin-bottom: 7%;
+  }
+  
+  .img {
+    width: 25%;
+  }
+  .imagen-pin{
+    width: 35px;
+    height: 35px;
+  }
+  
+  .informacion {
+    margin-left: 1.75%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .informacion p {
+    font-family: "SequelSansMedium";
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  .tipo p {
+    font-family: "SequelSansSemiBold";
+    margin: 0;
+    margin-right: 10px;
+    font-size: 0.82rem;
+  }
+  .tipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    color: rgb(107, 107, 107, 0.5);
+  }
+  .card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .porcentaje{
+    text-align: right;
+  }
+  
+  @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }

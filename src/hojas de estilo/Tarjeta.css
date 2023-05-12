@@ -7,9 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#contenedor-tarjeta {
+  }
+  
+  #contenedor-tarjeta {
     position: fixed;
     height: 60%;
     width: 25%;
@@ -18,21 +18,12 @@
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     z-index: 9;
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.tarjeta-oculta {
-    display: none;
-}
-
-.tarjeta-visible {
-    display: block;
-}
-
-.cerrar-tarjeta {
+  }
+  
+  .cerrar-tarjeta {
     background-color: red;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -42,18 +33,16 @@
     border-radius: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
-}
-
-.cerrar-tarjeta:hover {
+  }
+  
+  .cerrar-tarjeta:hover {
     background-color: #000;
     color: #fff;
-}
-
-.title-card {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+  }
+  
+  /* Resto de los estilos... */
+  
