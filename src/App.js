@@ -1,35 +1,28 @@
-
 import "./App.css"; //CSS DE LA CLASE
 import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de contenedores
 import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
-import { useState, useEffect } from "react";
-import { Tarjeta } from "./components/Tarjeta";
+
 import {Mapa2} from "./components/Mapa2.js";
 
+
 function App() {
-  const [tarjetaVisible, setTarjetaVisible] = useState(false);
-
-  const abrirTarjeta = () => {
-    setTarjetaVisible(true);
-  };
-
-  const cerrarTarjeta = () => {
-    setTarjetaVisible(false);
-  };
-
   return (
     <div className="App">
       <div className="contenedor-principal">
-        {/* Resto del código... */}
+        <div className="logo-nombre">
+          <img
+            className="logo"
+            src={require("./imagenes/LogoPNG.png")}
+            alt="logo.png"
+          />
+          <h1 className="Nombre">Bin-Go</h1>
+        </div>
         <div className="componentes">
           <div className="barra-izquierda">
             <Listaizq />
           </div>
           <div className="centro">
-            <Mapa2 />
-            <div onClick={abrirTarjeta}>
-              {tarjetaVisible && <Tarjeta onClose={cerrarTarjeta} />}
-            </div>
+            <Mapa2/>
           </div>
           <div className="barra-derecha">
             <Listader />
@@ -39,4 +32,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
