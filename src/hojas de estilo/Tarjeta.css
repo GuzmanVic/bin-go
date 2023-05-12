@@ -1,0 +1,131 @@
+.tarjeta {
+  background-color: rgba(250, 0, 0, 0.696);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contenedor-tarjeta {
+  position: fixed;
+  height: 60%;
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cerrarTarjeta {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  /* Eliminar fondo gris */
+  border: none;
+  /* Eliminar borde */
+}
+
+.cerrarTarjeta:hover {
+  background-color: rgba(221, 221, 221, 0.474);
+}
+
+.imagen-referencia {
+  margin-left: 14%;
+}
+
+.img-referencia {
+  width: 150px;
+  height: 80%;
+}
+
+.reportar-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+}
+
+.btn-reportar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -500%;
+}
+
+.btn-reportar:hover {
+  background-color: darkred;
+}
+
+.reporte-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  margin-left: -400px;
+}
+
+.reporte-contenedor>* {
+  margin-right: 10px;
+}
+
+.reporte-contenedor>*:last-child {
+  margin-right: 0;
+}
+
+.confirmacion-envio,
+.enviado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 300px;
+  /* Ajusta el valor según tu preferencia */
+}
+
+
+.btn-cancelar,
+.btn-enviar {
+  background: red;
+  border-radius: 22px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-enviar {
+  background-color: greenyellow;
+}
+
+.btn-cancelar:hover {
+  background: darkred;
+}
+
+.btn-enviar:hover {
+  background: darkgreen;
+}
+
+.enviado {
+  background-color: #fff;
+}

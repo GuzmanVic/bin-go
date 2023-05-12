@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "SequelSansSemiBold";
   src: url("./fonts/SequelSansSemiBoldDisp.ttf");
@@ -9,11 +8,12 @@
   src: url("./fonts/SequelSansMediumDisp.ttf");
 }
 
-.Nombre{
- margin-left: .45%;
- font-family: "SequelSansMedium";
+.Nombre {
+  margin-left: .45%;
+  font-family: "SequelSansMedium";
 
 }
+
 .logo-nombre {
   margin-top: 0.5%;
   margin-left: 5%;
@@ -43,6 +43,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .barra-derecha {
   width: 20%;
   display: flex;
@@ -57,7 +58,8 @@
   height: 90%;
   border-radius: 5%;
 }
-.centro{
+
+.centro {
   display: flex;
   align-items: center;
   justify-content: center;
