@@ -23,25 +23,20 @@
   transform: translate(-50%, -50%);
 }
 
-.cerrar-tarjeta {
-  background-color: red;
-  border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  color: white;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
+.cerrarTarjeta {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
+  background: none;
+  /* Eliminar fondo gris */
+  border: none;
+  /* Eliminar borde */
 }
 
-.cerrar-tarjeta:hover {
-  background-color: #000;
-  color: #fff;
+.cerrarTarjeta:hover {
+  background-color: rgba(221, 221, 221, 0.474);
 }
 
 .imagen-referencia {
@@ -49,7 +44,7 @@
 }
 
 .img-referencia {
-  width:150px;
+  width: 150px;
   height: 80%;
 }
 
@@ -75,6 +70,7 @@
 .btn-reportar:hover {
   background-color: darkred;
 }
+
 .reporte-contenedor {
   display: flex;
   justify-content: center;
@@ -83,10 +79,53 @@
   margin-left: -400px;
 }
 
-.reporte-contenedor > * {
+.reporte-contenedor>* {
   margin-right: 10px;
 }
 
-.reporte-contenedor > *:last-child {
+.reporte-contenedor>*:last-child {
   margin-right: 0;
+}
+
+.confirmacion-envio,
+.enviado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 300px;
+  /* Ajusta el valor según tu preferencia */
+}
+
+
+.btn-cancelar,
+.btn-enviar {
+  background: red;
+  border-radius: 22px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-enviar {
+  background-color: greenyellow;
+}
+
+.btn-cancelar:hover {
+  background: darkred;
+}
+
+.btn-enviar:hover {
+  background: darkgreen;
+}
+
+.enviado {
+  background-color: #fff;
 }

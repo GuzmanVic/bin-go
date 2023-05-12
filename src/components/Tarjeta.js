@@ -12,7 +12,8 @@ import { TarjetaReporte } from "./TarjetaReporte";
 
 export function Tarjeta(props) {
   const [mostrarReporte, setMostrarReporte] = useState(false);
-
+  const [mostrarConfirmacion, setMostrarConfirmacion] = useState(false);
+  const [enviado, setMostrarEnviado] = useState(false);
   const cerrarTarjeta = () => {
     props.onClose();
   };
@@ -21,9 +22,24 @@ export function Tarjeta(props) {
     setMostrarReporte(true);
   };
 
+  const handleEnviarReporte = () => {
+    setMostrarConfirmacion(true);
+  };
+
+  const handleCancelarReporte = () => {
+    setMostrarConfirmacion(false);
+  };
+
+  const handleConfirmarEnvio = () => {
+
+    setMostrarReporte(false);
+    setMostrarConfirmacion(false);
+    setMostrarEnviado(true);
+  };
+
   return (
     <div id="contenedor-tarjeta" className="tarjeta">
-      <button className="cerrar-tarjeta" onClick={cerrarTarjeta}>
+      <button className="cerrarTarjeta" onClick={cerrarTarjeta}>
         X
       </button>
       <div className="izquierda">
@@ -59,13 +75,40 @@ export function Tarjeta(props) {
           </button>
         </div>
       )}
-      {mostrarReporte && (
+      {mostrarReporte && !mostrarConfirmacion && (
         <div className="reporte-contenedor">
-          <TarjetaReporte estado="Dañado" imagen={dañado} />
-          <TarjetaReporte estado="Lleno" imagen={lleno} />
-          <TarjetaReporte estado="Ausente" imagen={ausente} />
+          <TarjetaReporte estado="Dañado" imagen={dañado} onClick={handleEnviarReporte} />
+          <TarjetaReporte estado="Lleno" imagen={lleno} onClick={handleEnviarReporte} />
+          <TarjetaReporte estado="Ausente" imagen={ausente} onClick={handleEnviarReporte} />
+        </div>
+      )}
+
+      {mostrarConfirmacion && (
+        <div className="confirmacion-envio">
+          <p>Se enviará el reporte</p>
+          <div className="opciones-confirmacion">
+            <button className="btn-cancelar" onClick={handleCancelarReporte}>
+              <strong>
+                Cancelar
+              </strong>
+            </button>
+            <button className="btn-enviar" onClick={handleConfirmarEnvio}>
+              <strong>
+                Enviar
+              </strong>
+            </button>
+          </div>
+        </div>
+      )}
+      {enviado && (
+        <div className="enviado">
+          <button className="cerrarTarjeta" onClick={cerrarTarjeta}>
+            X
+          </button>
+          <h1>¡Reporte enviado!</h1>
         </div>
       )}
     </div>
   );
 }
+

@@ -5,8 +5,6 @@ import verde from "../imagenes/verde.png";
 import amarillo from "../imagenes/amarillo.png";
 import rojo from "../imagenes/rojo.png";
 import { Tarjeta } from "./Tarjeta.js";
-import { TarjetasInformacion } from "./TarjetasInformacion";
-
 export function Contenedor(props) {
   const [mostrarTarjeta, setMostrarTarjeta] = useState(false);
 
