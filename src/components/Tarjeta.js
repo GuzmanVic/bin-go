@@ -20,15 +20,15 @@ export function Tarjeta(props) {
         <TarjetasInformacion 
           imagen={pin}
           titulo='Ubicación'
-          sujeto="Cafeteria"/>
+          sujeto={props.ubicacion}/>
           <TarjetasInformacion 
           imagen={tipo}
           titulo='Tipo'
-          sujeto="Mixto"/>
+          sujeto={props.tipo}/>
           <TarjetasInformacion 
           imagen={llenado}
           titulo='Lleno al'
-          sujeto="35%"/>
+          sujeto={props.porcentaje}/>
         </div>
       </div>
       <div id="front" className="front">

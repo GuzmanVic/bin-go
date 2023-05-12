@@ -5,6 +5,8 @@ import verde from "../imagenes/verde.png";
 import amarillo from "../imagenes/amarillo.png";
 import rojo from "../imagenes/rojo.png";
 import { Tarjeta } from "./Tarjeta.js";
+import { TarjetasInformacion } from "./TarjetasInformacion";
+
 export function Contenedor(props) {
   const [mostrarTarjeta, setMostrarTarjeta] = useState(false);
 
@@ -46,7 +48,14 @@ export function Contenedor(props) {
           <p className="porcentaje">{props.porcentaje}</p>
         </div>
       </div>
-      {mostrarTarjeta && <Tarjeta onClose={cerrarTarjeta} />}
-      </>
+      {mostrarTarjeta && (
+        <Tarjeta
+          onClose={cerrarTarjeta}
+          ubicacion={props.ubicacion} // Pasar la ubicación del contenedor a la Tarjeta
+          tipo={props.tipo} // Pasar el tipo del contenedor a la Tarjeta
+          porcentaje={props.porcentaje} // Pasar el porcentaje del contenedor a la Tarjeta
+        />
+      )}
+    </>
   );
 }
