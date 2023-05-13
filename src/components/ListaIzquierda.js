@@ -31,7 +31,7 @@ export function Listaizq() {
     const interval = setInterval(() => {
       const newData = Array.from({ length: 7 }, () => obtenerDatosUbicacion());
       setDatosUbicacion(newData);
-    }, 5000);
+    }, 300000);
 
     return () => {
       clearInterval(interval);

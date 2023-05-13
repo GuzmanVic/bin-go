@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../hojas de estilo/Tarjeta.css";
 import pin from "../imagenes/amarillo.png";
 import tipo from "../imagenes/verde.png";
@@ -11,15 +11,32 @@ import referencia from "../imagenes/LogoPNG.png";
 import { TarjetaReporte } from "./TarjetaReporte";
 
 export function Tarjeta(props) {
-  const [mostrarReporte, setMostrarReporte] = useState(false);
   const [mostrarConfirmacion, setMostrarConfirmacion] = useState(false);
   const [enviado, setMostrarEnviado] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
+  const [mostrarReporte, setMostrarReporte] = useState(false);
+  const [mostrarAnimacion, setMostrarAnimacion] = useState(false);
+
+  useEffect(() => {
+    if (mostrarConfirmacion) {
+      setFadeOut(true);
+    }
+  }, [mostrarConfirmacion]);
+  useEffect(() => {
+    if (mostrarReporte) {
+      setTimeout(() => {
+        setMostrarAnimacion(true);
+      }, 0);
+    }
+  }, [mostrarReporte]);
+
   const cerrarTarjeta = () => {
     props.onClose();
   };
 
   const handleReportar = () => {
     setMostrarReporte(true);
+    setMostrarAnimacion(true);
   };
 
   const handleEnviarReporte = () => {
@@ -28,10 +45,10 @@ export function Tarjeta(props) {
 
   const handleCancelarReporte = () => {
     setMostrarConfirmacion(false);
+    setFadeOut(false);
   };
 
   const handleConfirmarEnvio = () => {
-
     setMostrarReporte(false);
     setMostrarConfirmacion(false);
     setMostrarEnviado(true);
@@ -76,13 +93,12 @@ export function Tarjeta(props) {
         </div>
       )}
       {mostrarReporte && !mostrarConfirmacion && (
-        <div className="reporte-contenedor">
+        <div className={`reporte-contenedor ${mostrarAnimacion ? 'mostrar' : ''}`}>
           <TarjetaReporte estado="Dañado" imagen={dañado} onClick={handleEnviarReporte} />
           <TarjetaReporte estado="Lleno" imagen={lleno} onClick={handleEnviarReporte} />
           <TarjetaReporte estado="Ausente" imagen={ausente} onClick={handleEnviarReporte} />
         </div>
       )}
-
       {mostrarConfirmacion && (
         <div className="confirmacion-envio">
           <p>Se enviará el reporte</p>
@@ -100,6 +116,7 @@ export function Tarjeta(props) {
           </div>
         </div>
       )}
+
       {enviado && (
         <div className="enviado">
           <button className="cerrarTarjeta" onClick={cerrarTarjeta}>
@@ -111,4 +128,3 @@ export function Tarjeta(props) {
     </div>
   );
 }
-

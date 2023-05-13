@@ -65,6 +65,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-left: -500%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .btn-reportar:hover {
@@ -77,7 +78,16 @@
   align-items: center;
   margin-top: 400px;
   margin-left: -400px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.reporte-contenedor.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .reporte-contenedor>* {
   margin-right: 10px;
@@ -128,4 +138,10 @@
 
 .enviado {
   background-color: #fff;
+}
+
+.btn-reportar:active {
+  transform: translateY(20px);
+ transform: translateY(10px) scale(0.9);
+  opacity: 0; 
 }
