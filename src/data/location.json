@@ -4,79 +4,79 @@
         "nombre": "Lugar A",
         "ubicacion": "Ciudad X",
         "tipo": "Tipo 1",
-        "latitud": 40.7128,
-        "longitud": -74.0060
+        "latitud": 22.703088001324343,
+        "longitud": -99.01128084020833  
     },
     {
         "id": 2,
         "nombre": "Lugar B",
         "ubicacion": "Ciudad Y",
         "tipo": "Tipo 2",
-        "latitud": 34.0522,
-        "longitud": -118.2437
+        "latitud": 22.7032932443995,
+        "longitud": -99.0113406471128
     },
     {
         "id": 3,
         "nombre": "Lugar C",
         "ubicacion": "Ciudad Z",
         "tipo": "Tipo 1",
-        "latitud": 51.5074,
-        "longitud": -0.1278
+        "latitud": 22.703376371435176,
+        "longitud": -99.01107430702166
     },
     {
         "id": 4,
         "nombre": "Lugar D",
         "ubicacion": "Ciudad W",
         "tipo": "Tipo 3",
-        "latitud": 48.8566,
-        "longitud": 2.3522
+        "latitud": 22.703224094438173,
+        "longitud": -99.01103044862369
     },
     {
         "id": 5,
         "nombre": "Lugar E",
         "ubicacion": "Ciudad V",
         "tipo": "Tipo 2",
-        "latitud": 52.5200,
-        "longitud": 13.4050
+        "latitud": 22.70340559025781,
+        "longitud": -99.01054243447567
     },
     {
         "id": 6,
         "nombre": "Lugar F",
         "ubicacion": "Ciudad U",
         "tipo": "Tipo 1",
-        "latitud": 41.9028,
-        "longitud": 12.4964
+        "latitud": 22.702641259117218,
+        "longitud": -99.01078852962003
     },
     {
         "id": 7,
         "nombre": "Lugar G",
         "ubicacion": "Ciudad T",
         "tipo": "Tipo 3",
-        "latitud": 35.6895,
-        "longitud": 139.6917
+        "latitud": 22.70316425969624,
+        "longitud": -99.01047389330807
     },
     {
         "id": 8,
         "nombre": "Lugar H",
         "ubicacion": "Ciudad S",
         "tipo": "Tipo 2",
-        "latitud": 37.7749,
-        "longitud": -122.4194
+        "latitud": 22.70364221285324,
+        "longitud": -99.01069737103317
     },
     {
         "id": 9,
         "nombre": "Lugar I",
         "ubicacion": "Ciudad R",
         "tipo": "Tipo 1",
-        "latitud": 45.4215,
-        "longitud": -75.6981
+        "latitud": 22.703468984386376,
+        "longitud": -99.0114345335654
     },
     {
         "id": 10,
         "nombre": "Lugar J",
         "ubicacion": "Ciudad Q",
         "tipo": "Tipo 3",
-        "latitud": 55.7558,
-        "longitud": 37.6176
+        "latitud": 22.703415330512254,
+        "longitud": -99.0108468355253
     }
 ]
