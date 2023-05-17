@@ -12,7 +12,7 @@ export function Listaizq() {
     function obtenerDatosUbicacion() {
       const ubicaciones = ['Edificio 2', 'CC2', 'Pasillo Cafetería', 'Cafetería', 'Edificio 1', 'Pasillo Exterior'];
       const porcentajes = [...Array(101).keys()];
-      const tipos = ['mixto', 'PET', 'orgánico', 'inorgánico'];
+      const tipos = ['Mixto', 'PET', 'Orgánico', 'Inorgánico'];
 
       const ubicacion = ubicaciones[Math.floor(Math.random() * ubicaciones.length)];
       const porcentaje = porcentajes[Math.floor(Math.random() * porcentajes.length)];

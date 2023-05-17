@@ -3,7 +3,7 @@ import { Listaizq } from "./components/ListaIzquierda.js"; //Componente de conte
 import { Listader } from "./components/ListaDerecha.js"; //Componente de contenedores
 
 import {Mapa2} from "./components/Mapa2.js";
-import {Mapita} from "./components/mapita.js"
+import {Mapita} from "./components/mapita2.js"
 
 
 
