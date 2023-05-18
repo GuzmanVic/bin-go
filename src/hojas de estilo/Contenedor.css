@@ -75,13 +75,7 @@
 }
 
 @media screen and (max-width: 1700px)  {
-  .porcentaje  {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1700px)  {
-  .tipo2  {
+  .porcentaje, .tipo2  {
     display: none;
   }
 }
