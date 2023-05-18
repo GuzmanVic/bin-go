@@ -155,7 +155,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) and (min-height: 835px) {
+@media screen and (min-width: 1600px) and (min-height: 1080) {
   div.bote div.tipo {
     display: none;
   }
