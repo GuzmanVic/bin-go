@@ -142,6 +142,6 @@
 
 .btn-reportar:active {
   transform: translateY(20px);
- transform: translateY(10px) scale(0.9);
+  transform: translateY(10px) scale(0.9);
   opacity: 0; 
 }
