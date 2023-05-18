@@ -73,3 +73,15 @@
     font-size: 80px;
   }
 }
+
+@media screen and (max-width: 1700px)  {
+  .porcentaje  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1700px)  {
+  .tipo2  {
+    display: none;
+  }
+}
