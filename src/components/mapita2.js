@@ -31,70 +31,63 @@ export function Mapita() {
         <Marker
           position={[22.703086518381053, -99.01126780406364]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor cafeteria. <br /> #1.
           </Popup>
         </Marker>
 
         <Marker
           position={[22.7032932443995, -99.0113406471128]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor cafeteria. <br /> #2.
           </Popup>
         </Marker>
 
         <Marker
           position={[22.703376371435176, -99.01107430702166]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor pasillo cafeteria. <br />
           </Popup>
         </Marker>
 
         <Marker
           position={[22.703224094438173, -99.01103044862369]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor bancas jardin. <br /> #1.
           </Popup>
         </Marker>
 
         <Marker
           position={[22.70340559025781, -99.010542434475674]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor bancas jardin. <br /> #3.
           </Popup>
         </Marker>
 
         <Marker
           position={[22.702641259117218, -99.01078852962003]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor estacionamiento. <br />
           </Popup>
         </Marker>
 
         <Marker
           position={[22.70316425969624, -99.01047389330807]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor edificio. <br /> #1.
           </Popup>
         </Marker>
 
         <Marker
           position={[22.70364221285324, -99.01069737103317]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
-          </Popup>
-        </Marker>
-
-        <Marker
-          position={[22.703468984386376, -99.0114345335654]} icon={iconito}>
-          <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor edificio. <br /> #2.
           </Popup>
         </Marker>
 
         <Marker
           position={[22.703415330512254, -99.0108468355253]} icon={iconito}>
           <Popup>
-            Puro pinche bin-go. <br /> y no mamadas.
+            Contenedor bancas jardin. <br /> #2.
           </Popup>
         </Marker>
 
