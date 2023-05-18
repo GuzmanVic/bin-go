@@ -1,0 +1,6 @@
+.contenedor-global{
+    z-index: 15;
+    background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+}

@@ -7,6 +7,10 @@
   font-family: "SequelSansMedium";
   src: url("./fonts/SequelSansMediumDisp.ttf");
 }
+body{
+  padding: auto;
+  margin: auto;
+}
 
 .Nombre {
   margin-left: .45%;
@@ -17,11 +21,22 @@
 
 
 .logo-nombre {
-  margin-top: 0.5%;
+  width: 100%;
+  height: 15%;
+  /*margin-top: 0.5%;*/
+  /* margin-left: 5%; */
+  display: flex;
+  /* margin-bottom: 2%; */
+  align-items: center;
+  flex-direction: row;
+}
+
+.mover{
+  width: 10%;
   margin-left: 5%;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
 }
 
 .logo {
@@ -82,4 +97,12 @@
 
 .map-container .leaflet-tile-container {
   background-size: 120% !important;
+}
+
+.contenedor-principal{
+  width: 100vw;
+  height: 100vh;
+  padding: 0%;
+  margin: 0%;
+  position: relative;
 }

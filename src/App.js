@@ -4,6 +4,7 @@ import { Listader } from "./components/ListaDerecha.js"; //Componente de contene
 
 import {Mapa2} from "./components/Mapa2.js";
 import {Mapita} from "./components/mapita2.js"
+import {Tarjeta2} from "./components/tarjetacontenedor.js"
 
 
 
@@ -12,12 +13,14 @@ function App() {
     <div className="App">
       <div className="contenedor-principal">
         <div className="logo-nombre">
+          <div className="mover">
           <img
             className="logo"
             src={require("./imagenes/LogoPNG.png")}
             alt="logo.png"
           />
           <h1 className="Nombre">Bin-Go</h1>
+          </div>
         </div>
         <div className="componentes">
           <div className="barra-izquierda">
@@ -30,7 +33,9 @@ function App() {
             <Listader />
           </div>
         </div>
+        
       </div>
+      
     </div>
   );
 }
