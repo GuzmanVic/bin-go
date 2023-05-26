@@ -7,7 +7,7 @@ import lleno from "../imagenes/verde.png";
 import ausente from "../imagenes/contenedor-de-basura.png";
 
 import { TarjetasInformacion } from "./TarjetasInformacion";
-import referencia from "../imagenes/LogoPNG.png";
+import referencia from "../imagenes/BinGo1.png";
 import { TarjetaReporte } from "./TarjetaReporte";
 
 export function Tarjeta(props) {
