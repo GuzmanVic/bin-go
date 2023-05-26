@@ -59,8 +59,9 @@ export function Tarjeta(props) {
       <button className="cerrarTarjeta" onClick={cerrarTarjeta}>
         X
       </button>
+      <h1 class="titleContainer" >Contenedor</h1>
       <div className="izquierda">
-        <h1>Contenedor</h1>
+        <h1></h1>
         <div className="info" style={{ flex: 1, maxWidth: '75%' }}>
           <TarjetasInformacion
             imagen={pin}

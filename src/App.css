@@ -83,10 +83,6 @@
 
 /* width->ancho | height->alto*/
 @media screen and (min-width: 1920px) and (min-height: 1080px) {
-  /* * {
-    border: blue 1px solid; 
-  } acomodar elementos popup  */
-
   body {
     font-size: 20px;
   }

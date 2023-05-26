@@ -39,6 +39,12 @@
   background-color: rgba(221, 221, 221, 0.474);
 }
 
+.titleContainer {
+  margin-top: -50vh;
+  margin-left: 30%;
+  position: fixed;
+}
+
 .imagen-referencia {
   margin-left: 14%;
 }
@@ -143,5 +149,30 @@
 .btn-reportar:active {
   transform: translateY(20px);
   transform: translateY(10px) scale(0.9);
-  opacity: 0; 
+  opacity: 0;
+}
+
+/* width->ancho | height->alto*/
+@media screen and (min-width: 1920px) {
+  .btn-reportar {
+    margin: 0 -280% 5vh 0;
+    padding: 20px 90px;
+    font-size: 20px;
+    margin-left: -350%;
+  }
+
+  div .reporte-contenedor {
+    margin-top: 450px;
+    margin-left: 50px;
+    position: fixed;
+  }
+
+  .imagen-referencia {
+    margin-left: 33vh;
+    position: fixed;
+  }
+  .img-referencia {
+    width: 150px;
+    height: 80%;
+  }
 }

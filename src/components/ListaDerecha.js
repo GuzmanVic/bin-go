@@ -4,8 +4,6 @@ import "../App.css"; //CSS DE LA CLASE
 
 import { useState, useEffect } from "react";
 
-
-
 export function Listader() {
   const [datosUbicacion, setDatosUbicacion] = useState([]);
 

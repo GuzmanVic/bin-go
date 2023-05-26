@@ -89,3 +89,29 @@
     stroke: #00FF00;
   }
   
+  /* width->ancho | height->alto*/
+@media screen and (min-width: 1920px) {
+  div .info {
+    margin-bottom: 16vh;
+    width: 150%;
+    margin-left: 5vh;
+  }
+
+  div.sujeto, div.titulo {
+    padding-left: -10vh;
+  }
+
+  div.progress-bar {
+    position: fixed;
+    margin-left: 15vh;
+  }
+
+  .img {
+    width: 25%;
+  }
+  .imagen-pin{
+    width: 35px;
+    height: 35px;
+    padding-left: 5px;
+  }
+}
