@@ -152,6 +152,45 @@
   opacity: 0;
 }
 
+@media screen and (min-width: 1366px) {
+  .btn-reportar {
+    margin: 0 -280% 5vh 0;
+    padding: 20px 90px;
+    font-size: 10px;
+    margin-left: -350%;
+  }
+
+  div.reportCard {
+    width: 9vw;
+    height: 7vh;
+  }
+
+  div.imgReport img.imagen-report {
+    width: 25px;
+    height: 25px;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+
+  div .reporte-contenedor {
+    margin-top: 50vh;
+    margin-left: 2%;
+    position: fixed;
+    font-size: small;
+  }
+
+  .imagen-referencia {
+    margin-left: 33vh;
+    margin-bottom: 10vh;
+    position: fixed;
+  }
+  .img-referencia {
+    margin-top: 8vh;
+    width: 120px;
+    height: 50%;
+  }
+}
+
 /* width->ancho | height->alto*/
 @media screen and (min-width: 1920px) {
   .btn-reportar {
@@ -162,17 +201,18 @@
   }
 
   div .reporte-contenedor {
-    margin-top: 450px;
-    margin-left: 50px;
+    margin-top: 45vh;
+    margin-left: 2vh;
     position: fixed;
   }
 
   .imagen-referencia {
-    margin-left: 33vh;
+    margin-left: 30vh;
     margin-bottom: 10vh;
     position: fixed;
   }
   .img-referencia {
+    margin-top: 5vh;
     width: 150px;
     height: 80%;
   }

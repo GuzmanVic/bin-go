@@ -72,4 +72,6 @@
 }
 
 /* width->ancho | height->alto*/
-@media screen and (min-width: 1920px) and (min-height: 1080px) { }
+@media screen and (min-width: 1920px) {
+  
+}

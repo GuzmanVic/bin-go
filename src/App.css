@@ -81,8 +81,8 @@
   background-size: 120% !important;
 }
 
-/* width->ancho | height->alto*/
-@media screen and (min-width: 1920px) and (min-height: 1080px) {
+/* width->ancho | 1080px height->alto*/
+@media screen and (min-width: 1920px) {
   body {
     font-size: 20px;
   }
